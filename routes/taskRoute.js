@@ -8,7 +8,7 @@ router.get('/', getTasks);
 router.get('/:id', auth, getTaskById);
 router.put('/:id', auth, updateTask);
 router.delete('/:id', auth, deleteTask);
-router.post('/:id/reminder', auth, setTaskReminder);
+router.post('/reminder/:id', auth, setTaskReminder);
 
 
 module.exports = router;
