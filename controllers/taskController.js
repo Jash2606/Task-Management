@@ -299,6 +299,7 @@ exports.setTaskReminder = async (req, res) => {
       await task.save();
       res.status(200).json({
          success: true,
+         message: 'Remainder set successfully !',
          data: task
       });
    }catch(error){
